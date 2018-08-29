@@ -1,0 +1,197 @@
+body {
+    font-family: 'Roboto', 'Noto', sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+}
+header {
+    text-align: center;
+}
+.cart-detail h1 {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(34, 34, 34);
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.cart-detail p {
+    text-align: center;
+    color: rgb(160, 160, 160);
+}
+
+header>h1 {
+    margin: 0 0 4px 0;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+.clothes-container-main {
+    display: flex;
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 20px;
+}
+.flex-cart {
+    display: flex;
+}
+
+
+.shrink-image {
+    height: 72px;
+    align-content: center;
+}
+
+.shrink-image label {
+    margin: auto 0;
+    font-size: 13px;
+    padding: 0 30px;
+}
+
+.shrink-image img{
+    height: 100%;
+}
+
+
+.clothes-details {
+    display: block;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.clothes-details ul li {
+    width: 75px;
+}
+.flex {
+    flex: 1;
+}
+
+
+.shrink-name .name {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.details-wrp ul {
+    display: block;
+    align-items: center;
+    justify-content: flex-end;
+    color: rgb(160, 160, 160);
+    font-size: 14px;
+}
+
+.details-wrp ul select {
+    padding: 0;
+}
+
+
+select {
+    width: 60%;
+    height: 40px;
+    border: none;
+    background-color: white;
+    flex: 1;
+    padding: 0 16px;
+}
+
+select option {
+    padding: 10px;
+}
+
+
+.remove-item  {
+    display: flex;
+    align-items: flex-start;
+}
+
+.checkout-box {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.checkout-box span {
+    margin-right: 30px;
+    font-size: 130%;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.clothes-details ul li {
+    width: 75px;
+}
+.price{
+    margin:0;
+    font-size: 14px;
+    color: grey;
+    padding-top: 10px;
+    vertical-align: baseline;
+}
+.footer-button{
+    position: fixed;
+    bottom: 0;
+}
+
+
+@media (max-width: 768px ) {
+.shop-button{
+    display: none;
+}
+.footer-button{
+    visibility: visible;
+}
+}
+
+@media (min-width: 361px ) {
+    .clothes-details {
+        margin: 0;
+    }
+    .details-wrp ul {
+        display: flex;
+    }
+
+    .remove-item {
+        align-items: flex-start;
+    }
+}
+@media (min-width: 768px ) {
+    .clothes-details {
+        display: flex;
+    }
+    .button-shop-click{
+        visibility: visible;
+    }
+    .shop-button{
+        display: block;
+        visibility: visible;
+    }
+    .footer-button{
+        visibility: hidden;
+    }
+
+.details-wrp ul {
+    display: flex;
+    justify-content: space-around;
+}
+.remove-item {
+    align-items: center;
+}
+}

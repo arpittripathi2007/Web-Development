@@ -1,0 +1,231 @@
+.main-form {
+    margin: 0 auto;
+    padding: 0 24px 48px 24px;
+    max-width: 900px;
+    overflow: hidden;
+}
+
+.checkout-title {
+    text-align: center;
+}
+
+.checkout-title>h1 {
+    margin: 0 0 4px 0;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+h1 {
+    display: block;
+}
+
+h2 {
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+}
+
+.checkout-title>span {
+    color: grey;
+    font-size: 12px;
+}
+
+.grid {
+    margin-top: 40px;
+    flex-direction: row;
+}
+
+.grid>section {
+    flex: var(--layout-flex_-_flex);
+    -webkit-flex-basis: var(--layout-flex_-_-webkit-flex-basis);
+    flex-basis: var(--layout-flex_-_flex-basis);
+    width: 45%;
+}
+
+.grid>section:not(:first-child) {
+    margin-left: 80px;
+}
+
+.footer-button {
+    position: absolute;
+    width: 100%;
+    color: white;
+    background-color: darkblue;
+    height: 70px;
+    font-size: 15px;
+}
+
+@media screen and (min-width: 878px) {
+    .footer-button {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .footer-button{
+        visibility: visible;
+    }
+    .shop-button {
+        visibility: hidden;
+    }
+    .grid {
+        display: block;
+        margin-top: 0;
+    }
+    .grid>section {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .grid>section:not(:first-child) {
+        margin-left: 0%;
+    }
+    .row {
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        position: relative;
+    }
+    section>div {
+        margin-bottom: 30px;
+    }
+}
+
+.shop-input {
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.inline-input {
+    font-size: 16px;
+    position: relative;
+    display: inline-block;
+    margin: 20px 0;
+    width: 49.49%;
+}
+
+.shop-input>input {
+    font-size: 1em;
+    font-weight: 300;
+    color: black;
+    border: none;
+    padding: 8px 0;
+    width: 100%;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+/*Form animation transition*/
+
+label {
+    color: grey;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: grey;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: black;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+input:focus~.bar:before,
+input:focus~.bar:after {
+    width: 50%;
+}
+
+.column {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.column>div {
+    margin-left: 10px;
+}
+
+.shop-select-label {
+    color: grey;
+    line-height: 20px;
+}
+
+.shop-select>select {
+    padding: 24px 0px 0px 0px;
+    margin: 20px 0 0 0;
+}
+
+.shop-select>.shop-md-decorator {
+    display: block;
+    border-top: 1px solid #ccc;
+    height: 1px;
+}
+
+.shop-select>.shop-md-decorator>.shop-underline {
+    display: block;
+    background-color: var(--app-accent-color);
+    height: 2px;
+    position: relative;
+    top: -1px;
+    width: 100%;
+    margin: auto;
+    -webkit-transform: scale3d(0, 1, 1);
+    transform: scale3d(0, 1, 1);
+    transition: -webkit-transform 0.2s ease-in;
+    transition: transform 0.2s ease-in;
+}
+
+.order-summary-row {
+    line-height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row>.flex-item-details,
+.input-row>* {
+    font-size: 14px;
+}
+
+.order-summary-row>div {
+    width: 50%;
+    flex: 1;
+    margin-right: 0%;
+}

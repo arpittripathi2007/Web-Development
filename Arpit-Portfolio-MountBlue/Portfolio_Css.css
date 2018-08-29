@@ -1,0 +1,721 @@
+
+/*Header for the page*/
+body{
+    font-family: "Josefin Slab", serif;
+    position: relative;
+}
+.MainDiv{
+    position: relative;
+}
+.headerafter{
+    background-image: url("header-background.jpg");
+    background-size: cover;
+    height: fit-content;
+    /*padding-left: 10px;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+h1{
+    color: whitesmoke;
+    
+}
+h2{
+    color: whitesmoke
+}
+h4{
+    color: whitesmoke;
+}
+/*making the website responsive*/
+.img-responsive {
+    border-radius: 50%;
+    width: 50%;
+    
+}
+.active-nav{
+    background: #F67CBD;
+}
+
+.active,li:hover{
+    color: lightgray;
+    background-color:#F67CBD;
+}
+
+/*Navigation Bar Design*/
+navbar{
+    overflow: hidden;
+}
+
+
+
+.img-fluid{
+    max-width: 100%;
+  height: auto;
+}
+
+.navbar {
+    height: 8%;
+    background: #435A83;
+  }
+  .navbar-nav{
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-right: 50px;
+
+  }
+  .navbar-brand {
+   font-family: 'Josefin Slab', serif;
+   padding-top: 5px;
+   font-size: 47px;
+   font-weight: bold;
+   color: whitesmoke;
+   text-decoration: none;
+  }
+  
+  .nav-container {
+  padding-top: 8px;
+  }
+  
+  .navbar-custom {
+      font-size: 20px;
+      background-color: #FFF;
+  }
+/*Navigation Bar Ends*/
+/*--------------Home Division Design Starts-------------*/
+row{
+    margin-top: 50%;
+}
+.img-home{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    margin-top: 100%;
+    margin-bottom: 150%;
+    border-image: 10px;
+    float: right;
+}
+/*.img-back{ 
+    margin-top: 9%;
+    background-color: lightgrey;
+   
+}
+*/
+hr.star-light{
+    
+    max-width: 720px;
+    display: block;
+    block-size: 4%;
+    border-top: solid 5px;
+    border-color: whitesmoke;
+}
+.h2-Intro{
+    font-weight: bold;
+    font-size: 180%;
+    text-align: center;
+    text-transform: uppercase;
+    color:white;
+}
+.h1-Intro{
+    font-weight: bold;
+    font-size: 500%;
+    text-align: center;
+    text-transform: uppercase;
+    color: whitesmoke;
+
+}
+#intro_details{
+    background: #97B3D2 url("Images/stars_Blue_2.jpg") no-repeat center bottom;
+    background-size:cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 25%;
+    min-height: 520px;
+    display: block;
+    margin-right: 0%;
+    position: relative;
+    text-align: center;
+    margin-top: 4%;
+
+}
+.intro-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #435A83;
+    opacity: 0.3;
+}
+
+
+
+
+/*--------------Home Divison Design Ends-------------*/
+/*-----------------About Div Start--------------*/
+
+
+
+.h1-about{
+    color:  #435A83;
+    font-weight: bold;
+    font-size: 200%;
+   
+    text-transform: uppercase;
+    margin-left: 25%;
+} 
+.profile_pic_and_info {
+    margin: 5%;
+    display: flex;
+    flex-wrap: nowrap;
+    
+}
+.just_profile_pic{
+    width: 20%;
+}
+
+.just_paragraph{
+    width: 60%;
+    margin-left: 5%;
+}
+
+.MyProfilePic{
+    margin-top: 10%;
+    border-radius: 50%;
+    border-image: 10px;
+    margin-left: 5%;
+    
+}
+.smaller-image{
+    width:100%;
+}
+
+.tablink {
+    background-color: whitesmoke;
+    color: #435A83;
+    float: center;
+    
+    margin-top: 20%;
+    margin-bottom: 5%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+    
+}
+.tablink-active{
+    background-color: #435A83;
+    color: whitesmoke;
+}
+
+.tablink:hover {
+    background-color: #F67CBD;
+    
+}
+.tabcontent {
+    color: grey;
+    display: none;
+    
+    height: 50%;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+
+
+#Skills {background-color: white;}
+
+#Profile {background-color:white ;}
+
+
+/*TimeLine Starts*/
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0%;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #435A83;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+.h1-timeline{
+    color:  #435A83;
+    font-weight: bold;
+    font-size: 200%;
+    text-align: center;
+    text-transform: uppercase;
+} 
+.timeline>.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline>.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #F67CBD;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    right: 25.75%;
+}
+
+/* Place the container to the right */
+.right {
+    left: 25.25%;
+}
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #F67CBD;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #F67CBD;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid whitesmoke;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #F67CBD transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.content {
+    padding: 5px 30px;
+    background-color: #435A83;
+    position: relative;
+    border-radius: 6px;
+    
+}
+#myModal.modal-open {
+    overflow: hidden;
+    position: fixed;
+}
+MainDiv.noScroll { /* ...or body.dialogShowing */
+    overflow: hidden;
+  }
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 800px) {
+    /* .h2-Intro{
+        font-weight: bold;
+        font-size: 150%;
+        text-align: center;
+        text-transform: uppercase;
+        color: whitesmoke;
+    }
+    .h1-Intro{
+        font-weight: bold;
+        font-size: 400%;
+        text-align: center;
+        text-transform: uppercase;
+        color: whitesmoke;
+    
+    } */
+
+    /* Place the timelime to the left */
+    .just_profile_pic {
+        width: 50%;
+        align-content: center;
+        margin:auto;
+        margin-top: 10%;
+        margin-bottom: 10px;
+    
+    }
+
+    .just_paragraph{
+        margin-right: 3%;
+    }
+
+    .profile_pic_and_info {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 1%;
+    }
+  
+
+    .MyProfilePic{
+        margin-bottom: 20%;
+        border-radius: 50%;
+        border-image: 10px;
+        
+    }
+    .smaller-image{
+        width: 80%;
+    }
+    .h1-about{
+        margin: 5%;
+        margin-left: 40%;
+    
+    } 
+    
+
+
+  .timeline::after {
+    left: 50%;
+  }
+  
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 100%;
+  }
+  
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #F67CBD;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #F67CBD;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid whitesmoke;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #F67CBD transparent transparent;
+}
+
+
+  /* Make sure all circles are at the same spot */
+  
+  .right::after {
+    left:-5%;
+  }
+  .left {
+    right:25%;
+}
+
+/* Place the container to the right */
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left:25%;
+  }
+
+  .card{
+      margin-bottom: 10%;
+  }
+}
+
+
+/*----------About Div End*-----------*/
+/*-------ProjectDiv Starts-----------*/
+.Intro_Projects{
+    margin-bottom: 10%;
+}
+.img_hms{
+    width: 50%;
+}
+.project_hms{
+    margin-left: 10%;
+}
+
+.h1-project{
+    color:  #435A83;
+    font-weight: bold;
+    font-size: 200%;
+    text-align: center;
+    text-transform: uppercase;
+} 
+.img_snake .larger-image{
+    width: 120%;
+    
+}
+/*Modeling Snake Game Project Starts*/
+
+#img_snake {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#img_snake:hover {
+    color: #435A83;
+    opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(60,90,131); /* Fallback color */
+    background-color: rgba(60,90,131,0.9); /* Black w/ opacity */
+}
+/* Modal Content (game) */
+#playgame{
+    width: 50%;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 200px;
+}
+#mycanvas{
+    border:5px solid orange;
+    margin-left: 15%;
+}
+/* Add Animation */
+.modal-content {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close-modal {
+    position: absolute;
+    top: 12%;
+    right: 35px;
+    color: whitesmoke;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-modal:hover,
+.close-modal:focus {
+    color: #F67CBD;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+
+/*Modeling Snake Game Project Ends*/
+/*-------ProjectDiv End--------------*/
+
+/*---ContactDiv Start----*/
+#ContactSection{
+    font-family: 'Josefin Slab', serif;
+    margin-bottom: 3%;
+}
+
+#ContactField{
+    background-color: transparent;
+    height: 40px;
+    color: whitesmoke;
+    
+}
+
+.contactForm{
+    z-index: 2;
+}
+#FormField{
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 10px;
+    padding-left: 5px;
+    margin-top: 3%;
+    background-color: transparent;
+    width: 50%;
+    height: 50px;
+    border-style: solid;
+    border-width: 0px 0px 4px 0px;
+    border-color: #435A83;
+
+}
+
+#FormField:active,#FormField:focus {
+    outline: none;
+    border-color: #F67CBD;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: 'Josefin Slab', serif;
+    padding-bottom: 5px;
+    color: grey;
+    opacity: 1; /* Firefox */
+    padding-left: 5px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-family: 'Josefin Slab', serif;
+    color: grey;
+    padding-left: 5px;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    font-family: 'Josefin Slab', serif;
+    color: grey;
+    padding-left: 5px;
+}
+
+
+/*-----Contact Icons-------*/
+.icon-contact>.fa{
+    
+    color: whitesmoke;
+}
+.fa:hover{
+    color: #F67CBD;
+}
+
+/*-----Contact Icons--------*/
+
+
+
+
+
+.h1-contact{
+    margin-left: 35%;
+}
+
+.row-contact{
+    font-family: 'Josefin Slab', serif;
+    height: 60px;
+    margin-top:5%;
+    color: whitesmoke;
+}
+
+.FormSubmitButton{
+    margin-top: 1%;
+    color: whitesmoke;
+    width: 10%;
+    background-color: #435A83;
+    height: 45px;
+    margin-top: 6%;
+}
+.FormSubmitButton:hover{
+    background-color: #F67CBD !important;
+    opacity: 1;
+}
+
+
+.contact_details{
+    background: #97B3D2 url("Images/Spiti_Valley2.jpg") no-repeat center bottom;
+    background-size:cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 80%;
+    min-height: 620px;
+    display: block;
+    margin-right: 0%;
+    position: relative;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.contact-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #435A83;
+    opacity:0.1;
+}
+
+/*----ContactDiv End-----*/
+
+/*------------Footer or Main Div For Social Network Link--------------*/
+.footer-social-parent{
+    width: 100%;
+    height: fit-content;
+}
+
+.footer-social{
+    width: 100%;
+    color: black;
+    align-content: center;
+}
+.fa{
+    display: inline-block;
+    font-size: 36px;
+    
+
+}
+.fa:hover{
+    color: #F67CBD;
+}
+.footer-social ul{
+    display: inline-block;
+    list-style: none;
+    align-items: center;
+    padding-top: 0.5%;
+    padding-left: 42%;
+    
+    
+}
+.footer-social ul .li-fa a{
+    padding: 15px;
+}
+.li-fa{
+    display: inline;  
+    
+}
+/*-----------Footer or Main Div For Social Network Link----------------*/

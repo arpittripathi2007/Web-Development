@@ -1,0 +1,335 @@
+<link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<link rel =" stylesheet" href = "Portfolio_Css.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--A COMPLETE CONTAINER FOR WHOLE PAGE-->
+
+<title>Arpit | Portfolio</title>
+<link rel="icon" type = "image/png" href="Images/logo_Arpit.jpg">
+
+<div class = "container-fluid MainDiv" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!--Defining a row-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">
+                <h1>Portfolio</h1>
+        </a>
+          </div>
+        
+        <div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#HomeDiv"><h3 style="color:whitesmoke">Home</h3></a></li>
+                    <li><a href="#AboutDiv"><h3 style="color:whitesmoke">About</h3></a></li>
+                    <li><a href="#ProjectDiv"><h3 style="color:whitesmoke">Projects</h3></a></li>
+                    <li><a href="#ContactDiv"><h3 style="color:whitesmoke">Contacts</h3></a></li>
+                </ul>
+            </div>
+        </div>
+            </div>
+        </nav>  
+    <!--div for row for header ends-->
+    <!--Div for Home Starts-->
+    <section id = "intro_details">
+        <div class="intro-overlay"></div>
+    <div id = "HomeDiv" class="container intro-content"
+    style="margin-top: 5%">
+        <div>
+            <!-- <div class="col-md-2"></div> -->
+            <div class="text-center">
+            <p class="p-intro-content"
+            style="margin-top: 15%"> <h1 class="h1-Intro">Arpit Tripathi</h1>
+                <hr class="star-light">
+                <h2 class = h2-Intro>Software Developer | Full Stack Developer</h2>
+            </p>
+            
+        </div>
+            <!-- <div class="col-md-2">
+                <img class="img-home center " src="Images/android.png"></div>-->
+            
+        </div> 
+    </div>
+</section>
+    <!--Div for Home Ends-->
+    <section id="Intro_pic">
+    <div id="AboutDiv" class="profile_pic_and_info">
+            <div class = "just_profile_pic">
+                    <img class ="smaller-image MyProfilePic" src="Images/MyProfilePicCropped.jpg">
+            </div>
+            <div class = "just_paragraph">
+                <h1 class="h1-about">About Me</h1>
+                <p style=" color: grey; font-size: 178%;">
+                    Hello World! I am Arpit Tripathi. I am a Software Engineer.
+                    I did my graduation from Galgotia's College, Greater Noida.
+                    I always seeks to learn more and enhance my skills.I love
+                    to sketch, sing and travel.
+
+                </p>
+                <button class="tablink" onclick="openPage('Profile', this)">Profile</button>
+                <button class="tablink tablink-active" onclick="openPage('Skills', this)" id="defaultOpen">Skills</button>
+                 <!--About Profile Info Starts AboutDiv-->
+                <div id="Profile" class="tabcontent">
+                       <div class="row">
+                          
+                           <div class="col-md-6">  <h4 style="color: #435A83; font-size: 150%" ><strong>Full Name : </strong></h4></div>
+                        <div class="col-md-6"><h4 style="color: grey; font-size: 150%;"><strong>Arpit Tripathi</strong></h4></div>
+                    </div>
+                    <div class="row">
+                            <div class="col-md-6">  <h4 style="color: #435A83; font-size: 150%" ><strong>Date of Birth : </strong></h4></div>
+                         <div class="col-md-6"><h4 style="color: grey; font-size: 150%;"><strong>20/07/1994</strong></h4></div>
+                     </div>
+                     <div class="row">
+                            <div class="col-md-6">  <h4 style="color: #435A83; font-size: 150%" ><strong>Current Organisation : </strong></h4></div>
+                         <div class="col-md-6"><h4 style="color: grey; font-size: 150%;"><strong>Cognizant Technology Solutions</strong></h4></div>
+                     </div>
+                     <div class="row">
+                            <div class="col-md-6">  <h4 style="color: #435A83; font-size: 150%" ><strong>Email : </strong></h4></div>
+                         <div class="col-md-6"><h4 style="color: grey; font-size: 150%;"><strong>arpittripathi2007@gmail.com</strong></h4></div>
+                     </div>
+                        
+                        
+                      </div>
+                       <!--About Info Ends AboutDiv--> 
+                       <!--About Skills Info Starts AboutDiv-->
+                      <div id="Skills" class="tabcontent"> 
+                          <h4 style="color: grey; font-size: 150%;"><strong>Python</strong></h4>
+                            <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                      70%
+                                    </div>
+                            </div>
+                            <h4 style="color: grey; font-size: 150%;"><strong>Asp.Net</strong></h4>
+                            <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                      70%
+                                    </div>
+                                  </div>    
+                                  <h4 style="color: grey; font-size: 150%;"><strong>C/C#</strong></h4>
+                                  <div class="progress">
+                                          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                            60%
+                                          </div>
+                                        </div>    
+                                        <h4 style="color: grey; font-size: 150%;"><strong>JavaScript</strong></h4>
+                                        <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                                                  50%
+                                                </div>
+                                              </div> 
+                                              <h4 style="color: grey; font-size: 150%;"><strong>SQL</strong></h4>
+                                              <div class="progress">
+                                                      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                                        60%
+                                                      </div>
+                                                    </div>                            
+                      </div>
+
+                      <script src="file_JS.js">
+                      </script>
+                </div>
+               
+            </div>
+            
+        
+        <!--About Skills Info Ends AboutDiv-->
+
+        <!--TimeLineStarts in AboutDiv-->
+        <div class="row" style="margin-bottom: 5%;">
+                <div class="col-md-3"></div>
+                <div class="col-md-6"><h1 class = "h1-timeline text-center" style="color: #435A83"><strong>Timeline</strong></h1></div>
+                
+            </div>
+        <div class="row" style="margin-bottom: 10%;">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                    <div class="timeline">
+                        <div class="container left">
+                            <div class="content" style="color: whitesmoke;">
+                                <h2>Full Stack Developer</h2>
+                                <p style="font-size: 90%;">Aug 2018-Now</p>
+                                <p style="font-size: 120%;">MountBlue Technology</p>
+                            </div>
+                        </div>
+                            
+                        <div class="container right">
+                            <div class="content" style="color: whitesmoke;">
+                                <h2>Software Engineer</h2>
+                                <p style="font-size: 90%;">Nov 2017-June 2018</p>
+                                <p style="font-size: 120%;">Cognizant Technology Solution</p>
+                                <p style="font-size: 120%;"></p>
+                                
+                            </div>
+                        </div>
+                        <div class="container left">
+                            <div class="content" style="color: whitesmoke;">
+                                <h2>Certification</h2>
+                                <p style="font-size: 90%;">Jan 2017-Aug 2017</p>
+                                <p style="font-size: 120%;">Deep Learning Nano-Degree (Udacity)</p>
+                            </div>
+                        </div>
+                        <div class="container right">
+                            <div class="content" style="color: whitesmoke;">
+                                <h2>B.tech</h2>
+                                <p style="font-size: 90%;">2013-2017</p>
+                                <p style="font-size: 120%;">Galgotia's College of Engineering and Technology</p>
+                                <p style="font-size: 120%;"></p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                          
+            </div>
+
+        </div>
+        <!--TimeLine Ends-->
+
+
+    </section>
+    <!--AboutDiv End-->
+    <!--ProjectDiv Start-->
+    <!--ModalDiv Starts-->
+    <div id="myModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <body>
+            <div id = "#playgame">
+            <canvas id="mycanvas" width ="700"
+            height ="500"></canvas>
+            
+            <script src="snakes.js"></script>
+        </div>
+            
+        </body>
+      </div>
+    <!--Modal Div Ends-->
+    <section class="Intro_Projects">
+        <div id = "ProjectDiv" >
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6"><h1 class = "h1-project text-center" style="color: #435A83"><strong>Project</strong></h1></div>
+                
+            </div>
+            <div class="row">
+                <div class="col-md-1">
+
+                </div>
+                <div class="col-md-5">
+                        <div class="card" style="width: 80%">
+                                <img class="card-img-top img_hms" src="Images/HMS" alt="Card image"  style="width:100%">
+                                <div class="card-body">
+                                  <h4 class="card-title" style="color: #435A83"><h2 style="color:#435A83">Hospital Management System</h2>
+                                  <p class="card-text"><h4 style="color: black">A portal developed in Asp.Net to help out Hospital Management to keep records of patient, doctors and also monitor activities of patient</h4></p>
+                                  <a href="#" target="_blank" class="btn btn-primary">See Project</a>
+                                </div>
+                                
+                              </div>
+
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-5">
+                        <div class="card" style="width:80%">
+                                <img id = "img_snake" class="card-img-top .larger-image" src="Images/Snake_Game" alt="Card image" style="width:90%">
+                                <div class="card-body">
+                                  <h4 class="card-title" style="color: #435A83"><h2 style="color:#435A83">Snake Game</h2>
+                                  <p class="card-text"><h4 style="color: black">A simple snake game developed in JavaScript using Canvas to kill your boredam. Probably!</h4> </p>
+                                  <a href="#" target="_blank" class="btn btn-primary">See Project</a>
+                                </div>
+                                <script src="Modal.js">
+                                    </script>
+                              </div>
+
+
+                </div>
+                <div class="col-md-2">
+
+                </div>
+
+            </div>
+            
+        </div>
+
+        </section>
+        <!--ProjectDiv End-->
+        <!--ContactDiv Starts-->
+        
+        <section id="ContactSection" class="contact_details">
+                <div class="contact-overlay"></div>
+            <div class="row-contact" id="ContactDiv">
+                    <h1 class="row-contact-h1"><strong>Contact Me</strong></h1>
+            </div>
+                <div class = "row" style="margin:2%">
+                    <form>
+                        <div><input type="text" id = "FormField" height="5%" width="5%" placeholder="Name" ></div>
+                        <div><input type="text" id = "FormField" height="40px" width="5%" placeholder="Email" ></div>
+                        <div><input type="text" id = "FormField" height="40px" width="5%" placeholder="Subject" ></div>
+                        <div><input type="text" id = "FormField" height="40px" width="5%" placeholder="Message" ></div>
+                        <div><button class="FormSubmitButton text-center"><strong>Submit</strong></button>
+                        <!---<div class="submit-loader row">
+                            <div class="text-loader col-md-2">Loading</div>
+                            <div class="loader col-md-2"></div>-->
+
+                        </div>
+
+                        </form>
+                        <div class="row">
+                            <div class="col-md-2"></div>
+                            <div class="col-md-4" style="margin-top: 1%">
+                                <div class="icon icon-contact" style="margin-left: 8%">
+                                        <i class="fa fa-envelope"
+                                        style="font-size: 36px;"></i>
+                                </div>
+                                <h5 style="color: whitesmoke; margin-left: 20%;">arpittripathi2007@gmail.com</h5>
+                            </div>
+                            <div class="col-md-4"  style=" margin-top: 1%">
+                                    <div class="icon icon-contact" style="margin-left: 5%">
+                                            <i class="fa fa-phone"
+                                            style="font-size: 36px;"></i>
+                                    </div>
+                                    <h5 style="color: whitesmoke; margin-left:1%;">+918130060885</h5>
+                            </div>
+                            <div class="col-md-2"></div>
+                            
+                        </div>
+                    </div>
+            
+                
+            
+        </section>
+        </div>
+        <!--ContactDiv Ends-->
+        </div>
+
+
+
+<section id="into_social">
+    <div id = "socialDiv" class="footer-social-parent"></div>
+    
+    <div class="footer-social">
+        <ul class="ul" style="list-style-type: none;">
+            <li class="li-fa"><a href="www.linkedin.com" target = "_blank">
+                <i class="fa fa-linkedin "
+                style="font-size: 36px;"></i>
+            </a></li>
+            <li class ="li-fa"><a href="www.twitter.com" target = "_blank">
+                    <i class="fa fa-twitter"
+                            style="font-size: 36px;"></i>
+            </a></li>
+            <li class="li-fa"><a href="www.github.com" target = "_blank">
+                        <i class="fa  fa-github "
+                        style="font-size: 36px;"></i>
+            </a></li>
+            
+        </ul>
+    </div>
+    
+</section>
+
+
+<!--div for container end main div-->

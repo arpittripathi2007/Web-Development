@@ -1,0 +1,71 @@
+@media screen and (min-width: 1465px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .grid-container {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .grid li {
+        flex-basis: 33%;
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .item-details {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .detail-item h1 {
+        display: block;
+        margin: 0px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .price {
+        margin: 12px 0px 32px 0px;
+        color: grey;
+    }
+    .item-image {
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        max-height: 100%;
+    }
+    .shop-button .button-shop-click {
+        display: block;
+        background-color: darkblue;
+        border: none;
+        color: white;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+    }
+    header>h1 {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid {
+        margin: 0px 10px 32px 10px;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .grid li {
+        flex-basis: 50%;
+        width: 50%;
+    }
+}
